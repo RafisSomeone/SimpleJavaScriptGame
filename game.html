@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Gamedev Canvas Workshop</title>
+   
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+      
+    <canvas class="container-fluid" id="canvas" style=" border:15px solid rgb(2, 2, 1); background-color: rgb(86, 207, 6)"></canvas>
+
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm">
+    <input type="button" id="button"   name="name" value="Start" onclick="game()">
+    <table class="table table-striped table-bordered ">
+        <tr>
+            <th>
+                Points
+            </th>
+            <th>
+                Time
+            </th>
+            <th>
+                Stage
+            </th>
+        </tr>
+        <tr>
+            <td id="points"></td>
+            <td id="time"></td>
+            <td id="stage"></td>
+        </tr>
+    </table>
+    </div>
+    <div class="col-sm">
+    <table id=best_players class="table table-striped table-bordered">
+       <tr>
+        <th>
+                Best Players
+        </th>
+        <th>
+            Points
+        </th>
+    </tr>
+    <tr>
+        <td>no one</td>
+        <td>0</td>
+    </tr>
+    <tr>
+            <td>no one</td>
+            <td>0</td>
+        </tr>
+        <tr>
+                <td>no one</td>
+                <td>0</td>
+            </tr>
+    </table>
+    </div>
+</div>
+</div>
+<script src="gameScript.js">
+</script>
+
+
+</body>
+</html>
